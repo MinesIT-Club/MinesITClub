@@ -885,15 +885,11 @@ body {
 }
 
 .social-media-icon a:nth-child(2):hover {
-  color: #1c99e6;
-}
-
-.social-media-icon a:nth-child(3):hover {
   color: #af357e;
 }
 
-.social-media-icon a:nth-child(4):hover {
-  color: rgb(0, 115, 176);
+.social-media-icon a:nth-child(3):hover {
+  color: rgb(6, 126, 191);
 }
 
 .social-media-icon a:last-child:hover {
