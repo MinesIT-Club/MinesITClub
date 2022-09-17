@@ -1,0 +1,97 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-grey-dark;
+}
+
+.heading-primary{
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    line-height: 8.5rem;
+
+    
+    &--main {
+        color: $color-red-dark;
+        font-size: 9rem;
+        font-weight: 500;
+        letter-spacing: 3.5rem;
+    
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-family: 5rem;
+            margin-top: 7rem;
+        }
+        /*
+        animation-delay: 3s;
+        animation-iteration-count: 3;
+        */
+    }
+    
+    &--sub {
+        color: $color-white;
+        font-size: 3rem;
+        font-weight: 800;
+        letter-spacing: 1rem;
+        animation: moveInRight 1s ease-out;
+        &:hover {
+            text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+        }
+    
+        @include respond(phone) {
+            letter-spacing: .5rem;
+            margin-left: 2rem;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-red-dark, $color-grey-dark-3);
+    background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
+
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+}
+
+.heading-trtiary{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-red;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+    text-align: justify;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}

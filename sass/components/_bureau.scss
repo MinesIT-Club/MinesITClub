@@ -1,0 +1,113 @@
+.items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.group{
+    display: flex;
+    justify-content: center;
+
+    @include respond(tab-port) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.card-bureau{
+    width: 22rem;
+    height: 26rem;
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    background-color: rgba($color-white,.6);
+    border-radius: 10px;
+    text-align: center;
+    font-size: $default-font-size;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 10rem;
+
+    @include respond(tab-port) {
+        width: 30rem;
+        height: 27rem;
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-bottom: 8rem;
+        }
+
+    @include respond(phone) {
+        transform: skewX(0);
+    }
+
+    &__shape {
+        width: 13rem;
+        height: 13rem;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            border-radius: none;
+        }
+
+        @include respond(phone) {
+        }
+    }
+
+    &__img {
+        height: 100%;
+        transform: translateY(1rem) scale(1.2);
+        backface-visibility: hidden;
+        transition: all .5s;
+    }
+
+    &__text {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        margin-top: 2rem;
+        @include respond(phone) {
+            transform: skewX(0);
+            padding-left: 3.5rem;
+            padding-right: 3.5rem;
+    
+        }
+    }
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img {
+        transform:  scale(1.1);
+        filter: blur(3px) brightness(50%);
+    }
+}

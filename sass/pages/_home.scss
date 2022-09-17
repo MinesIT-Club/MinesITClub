@@ -1,0 +1,138 @@
+.section-about {
+    background-color: $color-grey-light-1;
+    padding: 25rem 0;
+    margin-top: -20vh;
+
+    @include respond(tab-port) {
+        padding-top: 25rem;
+        padding-bottom: 15rem;
+    }
+}
+
+.section-objectifs {
+    padding-top: 15rem;
+    padding-bottom: 20rem;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-black, 0.7), 
+        rgba($color-black, 0.7)), 
+        url(/img/objectif-background.jpg);
+    background-size: cover;
+    background-position-y: bottom;
+    margin-top: -10rem;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    background-attachment: fixed;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    @include respond(phone) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+}
+
+.section-cells{
+    background-color: $color-grey-light-1;
+    padding: 5rem 0 15rem 0;
+    margin-top: -10rem;
+
+    @include respond(tab-port) {
+        padding: 7rem 0 10rem 0;
+
+        .heading-secondary{
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.section-bureau{ 
+    background-image: linear-gradient(to top, 
+    rgba($color-black, 0.7), 
+    rgba($color-black, 0.7)), 
+    url(/img/enim1.jpg);
+    background-size: cover;
+    background-position-y: bottom;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%); 
+    position: relative;
+    padding: 10rem 0;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        background-position-x: center;
+        background-position-y: top;
+    padding-bottom: 5rem;
+
+    }
+}
+
+.section-contact{
+    padding-bottom: 18rem;
+    padding-top: 20rem;
+    background-color: $color-grey-light-1;
+    margin-top: -10vh;
+    @include respond(tab-port) {
+        padding: 20rem 0;
+    }
+}
+
+.contact{
+    width: 95%;
+    height: 100%;
+    box-shadow: 0 3rem 6rem rgba($color-black, .2);
+    background-image:linear-gradient(105deg,
+                             rgba($color-white, .6) 0%, 
+                             rgba($color-white, .6) 50%, 
+                             transparent 50%), 
+                             url(/img/background-form.jpg);
+                             
+    background-size: cover;
+    background-position-y: center;
+    border-radius: 3px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    @include respond(tab-land) {
+        background-image: linear-gradient(105deg, 
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 65%,
+        transparent 65%),
+url(/img/background-form.jpg);
+        background-size: cover;
+    }
+
+    @include respond(tab-port){
+        background-image: linear-gradient(to right, 
+        rgba($color-white, .5) 0%,
+        rgba($color-white, .5) 100%),
+url(/img/background-form.jpg);
+        width: 40rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    &__form {
+        width: 48%;
+        padding-left: 6rem;
+            
+
+        @include respond(tab-land) {
+            width: 85%;
+        padding-left: 0rem;
+
+        }
+
+        @include respond(tab-port) {
+            width: 85%;
+        padding-left: 0rem;
+
+        }
+    }
+}
