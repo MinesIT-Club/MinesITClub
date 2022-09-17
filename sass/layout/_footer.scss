@@ -10,7 +10,7 @@
     @include respond(tab-port) {
         padding: 5rem 0;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
-        font-size: 1.2rem;
+        font-size: 1.15rem;
     }
 
     &__logo-box {
@@ -133,13 +133,13 @@
 .social-media-icon a:visited{
     border: none;
     font-size: 2rem;
-    margin-left: 2.5rem;
+    margin-left: 3.5rem;
     color: $color-grey-dark-3;
     transition: color 0.3s;
 
     @include respond(tab-port) {
-        margin-right: 1rem;
-        margin-left: 1rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
     }
 }
 .social-media-icon a:first-child:hover{

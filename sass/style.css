@@ -471,6 +471,7 @@ body {
 
 .composition {
   position: relative;
+  margin-top: 2.5rem;
 }
 @media only screen and (max-width: 56.25em) {
   .composition {
@@ -754,7 +755,7 @@ body {
     padding: 5rem 0;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
 }
 .footer__logo-box {
@@ -867,15 +868,15 @@ body {
 .social-media-icon a:visited {
   border: none;
   font-size: 2rem;
-  margin-left: 2.5rem;
+  margin-left: 3.5rem;
   color: #333333;
   transition: color 0.3s;
 }
 @media only screen and (max-width: 56.25em) {
   .social-media-icon a:link,
 .social-media-icon a:visited {
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
   }
 }
 
