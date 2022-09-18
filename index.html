@@ -325,7 +325,9 @@
             <div class="row">
                 <div class="contact">
                     <div class="contact__form">
-                        <form action="#" class="form">
+                        <form action="https://api.web3forms.com/submit" method="POST" class="form">
+                            <input type="hidden" name="access_key" value="5890fd58-a91b-4d47-9c15-912c3598395c">
+
                             <div class="u-margin-bottom-medium">
                                 <h2 class="heading-secondary">
                                     contactez-nous!
@@ -348,8 +350,10 @@
                                 <label for="Message" class="form__label">Message</label>
                             </div>
 
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
                             <div class="form__group">
-                                <button class="btn btn--grey">soumettre &rarr;</button>
+                                <button type="submit" class="btn btn--grey">soumettre &rarr;</button>
                             </div>
                         </form>
                     </div>
