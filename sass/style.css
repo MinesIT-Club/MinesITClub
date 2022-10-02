@@ -347,7 +347,7 @@ body {
   line-height: 5rem;
 }
 .card__side--back-1 {
-  background-image: linear-gradient(to right bottom, rgba(196, 0, 0, 0.8), #B60707);
+  background-image: linear-gradient(to right bottom, rgba(196, 0, 0, 0.9), #B60707);
 }
 .card__side--back-2 {
   background-image: linear-gradient(to right bottom, #c40000, rgba(0, 0, 0, 0.8));
@@ -437,6 +437,8 @@ body {
 }
 .card__DESCRIPTION-only {
   font-size: 1.6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 @media only screen and (max-width: 56.25em), only screen and (hover: none) {
   .card {
@@ -452,6 +454,9 @@ body {
   }
   .card__side--back {
     transform: rotateY(0);
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    border-radius: 0 0 0.5rem 0.5rem;
   }
   .card:hover .card__side--front {
     transform: rotateY(0);
@@ -469,6 +474,9 @@ body {
   }
   .card__DESCRIPTION-box {
     margin-bottom: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    line-height: 3rem;
   }
 }
 

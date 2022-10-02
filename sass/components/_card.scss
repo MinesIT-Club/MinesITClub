@@ -29,7 +29,7 @@
             line-height: 5rem;
 
             &-1 {
-                background-image: linear-gradient(to right bottom, rgba($color-red,.8), $color-red-dark);
+                background-image: linear-gradient(to right bottom, rgba($color-red,.9), $color-red-dark);
             }
 
             &-2 {
@@ -155,6 +155,8 @@
 
     &__DESCRIPTION-only {
         font-size: 1.6rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
 
@@ -177,6 +179,9 @@
 
             &--back {
                 transform: rotateY(0);
+                -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+                clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+                border-radius: 0 0 .5rem .5rem;       
             }
         }
     
@@ -201,6 +206,10 @@
 
         &__DESCRIPTION-box {
             margin-bottom: 3rem;
+            padding-top: 4rem;
+            padding-bottom: 2rem;
+
+            line-height: 3rem;
         }
     }
 
