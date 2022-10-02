@@ -343,12 +343,14 @@ body {
 }
 .card__side--back {
   transform: rotateY(180deg);
+  letter-spacing: 0.2rem;
+  line-height: 5rem;
 }
 .card__side--back-1 {
-  background-image: linear-gradient(to right bottom, rgb(196, 0, 0), #B60707);
+  background-image: linear-gradient(to right bottom, rgba(196, 0, 0, 0.8), #B60707);
 }
 .card__side--back-2 {
-  background-image: linear-gradient(to left bottom, #999, #333333);
+  background-image: linear-gradient(to right bottom, #c40000, rgba(0, 0, 0, 0.8));
 }
 .card__side--back-3 {
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.85));
@@ -387,6 +389,7 @@ body {
   top: 12rem;
   right: 2rem;
   width: 75%;
+  line-height: 5.3rem;
 }
 .card__heading-span {
   padding: 1rem 1.5rem;

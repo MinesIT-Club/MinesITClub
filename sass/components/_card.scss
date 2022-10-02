@@ -25,13 +25,15 @@
 
         &--back {
             transform: rotateY(180deg);
+            letter-spacing: .2rem;
+            line-height: 5rem;
 
             &-1 {
-                background-image: linear-gradient(to right bottom, $color-red, $color-red-dark);
+                background-image: linear-gradient(to right bottom, rgba($color-red,.8), $color-red-dark);
             }
 
             &-2 {
-                background-image: linear-gradient(to left bottom, $color-grey-dark-2, $color-grey-dark-3);
+                background-image: linear-gradient(to right bottom, rgba($color-red,1), rgba($color-black, .8));
             }
 
             &-3 {
@@ -86,6 +88,7 @@
         top: 12rem;
         right: 2rem;
         width: 75%;
+        line-height: 5.3rem;
     
     }
 
