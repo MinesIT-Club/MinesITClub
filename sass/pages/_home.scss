@@ -7,6 +7,11 @@
         padding-top: 25rem;
         padding-bottom: 15rem;
     }
+    @include respond(tab-land) {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
 }
 
 .section-objectifs {
@@ -31,6 +36,10 @@
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
+    @include respond(tab-land) {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
 
 }
 
@@ -45,6 +54,10 @@
         .heading-secondary{
             margin-bottom: 2rem;
         }
+    }
+    @include respond(tab-land) {
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 }
 
@@ -80,7 +93,7 @@
 }
 
 .contact{
-    width: 95%;
+    width: 100%;
     height: 100%;
     box-shadow: 0 3rem 6rem rgba($color-black, .2);
     background-image:linear-gradient(105deg,
@@ -96,12 +109,14 @@
     padding-bottom: 5rem;
 
     @include respond(tab-land) {
-        background-image: linear-gradient(105deg, 
-        rgba($color-white, .9) 0%,
-        rgba($color-white, .9) 65%,
-        transparent 65%),
-url(/img/background-form.jpg);
+        background-image:linear-gradient(105deg,
+        rgba($color-white, .6) 0%, 
+        rgba($color-white, .6) 60%, 
+        transparent 50%), 
+        url(/img/background-form.jpg);
         background-size: cover;
+        width: 90%;
+        margin: 0 auto;
     }
 
     @include respond(tab-port){
@@ -109,7 +124,7 @@ url(/img/background-form.jpg);
         rgba($color-white, .5) 0%,
         rgba($color-white, .5) 100%),
 url(/img/background-form.jpg);
-        width: 40rem;
+        // width: 40rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -121,17 +136,16 @@ url(/img/background-form.jpg);
     &__form {
         width: 48%;
         padding-left: 6rem;
-            
+                   
 
         @include respond(tab-land) {
-            width: 85%;
-        padding-left: 0rem;
-
+            width: 55%;
+            // padding-left: 0rem;
         }
 
         @include respond(tab-port) {
             width: 85%;
-        padding-left: 0rem;
+            padding-left: 0rem;
 
         }
     }

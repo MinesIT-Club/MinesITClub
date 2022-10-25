@@ -11,21 +11,24 @@
     @include respond(tab-port) {
         padding: 2rem;
     }
-
-    &__icon {
-        font-size: 6rem;
-        margin-bottom: .5rem;
-        display: inline-block;
-        background-image: linear-gradient(to right, $color-red, $color-red-dark);
-        background-clip: text;
-        color: transparent;
-
-        @include respond(tab-port) {
-            margin-bottom: 0;
-        }
+    @include respond(tab-land) {
+        padding: 4rem 1.7rem;
     }
 
-    &:hover {
-        transform: translateY(-1.5rem) scale(1.03);
-    }
+    // &__icon {
+    //     font-size: 6rem;
+    //     margin-bottom: .5rem;
+    //     display: inline-block;
+    //     background-image: linear-gradient(to right, $color-red, $color-red-dark);
+    //     background-clip: text;
+    //     color: transparent;
+
+    //     @include respond(tab-port) {
+    //         margin-bottom: 0;
+    //     }
+    // }
+
+    // &:hover {
+    //     transform: translateY(-1.5rem) scale(1.03);
+    // }
 }

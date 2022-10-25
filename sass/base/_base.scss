@@ -30,6 +30,11 @@ body {
     @include respond(tab-port) {
         padding: 0;
     }
+
+    @include respond(tab-land) {
+        padding: 0;
+    }
+    
 }
 
 // ::selection {
