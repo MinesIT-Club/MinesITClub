@@ -7,3 +7,4 @@ function CloseNav() {
     chec.checked = false;
 
 };
+//this is a comment
