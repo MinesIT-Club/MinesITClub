@@ -574,6 +574,9 @@ body {
     padding: 4rem 1.7rem;
   }
 }
+.objectif-box:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
 
 .form__group:not(:last-child) {
   margin-bottom: 1rem;
@@ -611,6 +614,7 @@ body {
 }
 .form__label {
   font-size: 1.2rem;
+  text-align: start;
   font-weight: 700;
   margin-left: 2rem;
   margin-top: 0.7rem;
